@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap&_v=20260304234804" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20260304234804">
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css?_v=20260304234804">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css?_v=20260304234804">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__top">
+      <div class="header__top-bg"></div>
+      <div class="header__top-content">
+        <div class="header__top-content-left">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link" aria-label="Keren Aliza Project - на главную">
+              <img src="/img/svg/logo.svg" alt="Логотип Keren Aliza Project">
+            </a>
+          </div>
+        </div>
+        <div class="header__top-content-right">
+          <ul class="header__actions">
+            <li class="header__actions-item">
+              <button class="header__actions-btn --search" aria-label="Поиск по сайту">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li class="header__actions-item">
+              <a href="https://wa.me/79276666666" class="header__actions-btn --whatsapp" aria-label="Написать в WhatsApp">
+                <span class="visually-hidden">WhatsApp</span>
+              </a>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --user"></button>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-btn --login"></a>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --cart" aria-label="Корзина, товаров: 0">
+                <span class="header__actions-badge" aria-live="polite">0</span>
+              </button>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --lang">Ru</button>
+              <ul class="header__lang-menu">
+                <li><a href="#">Ru</a></li>
+                <li><a href="#">En</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__nav">
+      <nav class="header__nav-content">
+        <div class="header__app-nav" aria-label="Основная навигация">
+          <a class="header__app-nav-item --shop" href="/shop">
+            <img src="/img/svg/header_store.svg" alt="">
+            <span>Магазин</span>
+          </a>
+          <button class="header__app-nav-item --menu" type="button">
+            <span>Меню</span>
+            <span class="header__app-nav-burger">
+                        <span></span>
+            </span>
+          </button>
+        </div>
+
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Ализа Керен</a>
+          </li>
+          <li class="header__nav-item --has-submenu">
+            <a href="#" class="header__nav-link">Музыкальный магазин</a>
+          </li>
+          <li class="header__nav-item --has-submenu">
+            <a href="#" class="header__nav-link">Слушать скрипку</a>
+            <div class="header__nav-submenu">
+              <div class="header__nav-submenu-group">
+                <h3 class="header__nav-submenu-title">Авторская музыка</h3>
+                <ul class="header__nav-submenu-list">
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Танцевальная</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Медленная</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Еврейская</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Песни</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__nav-submenu-group">
+                <h3 class="header__nav-submenu-title">Аранжировки и транскрипции</h3>
+                <ul class="header__nav-submenu-list">
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Золотые хиты</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Оперетта</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Еврейская музыка</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Ансамбли с певцами</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Статьи о скрипке</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Уроки и курсы</a>
+          </li>
+          <li class="header__nav-item --do-re-mi">
+            <a href="#" class="header__nav-link">
+              <span>Методика До-Ре-Ми</span>
+              <img src="/img/svg/header_doremi.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <nav class="breadcrumb container mt-24px" aria-label="breadcrumb">
+      <ol>
+        <li><a href="#">Главная</a></li>
+        <li aria-current="page">Партнеры</li>
+      </ol>
+    </nav>
+    <section class="partners-intro container row g-20px mt-32px mt-md-40px" aria-labelledby="partners-title">
+      <div class="col-12 col-lg-6 partners-bg-s1 rounded-16px px-16px py-24px px-md-48px py-md-32px">
+        <h1 id="partners-title">Партнёрство и поддержка музыкальных проектов Keren Aliza Project</h1>
+        <p class="text-16 fw-medium mt-16px">Приглашаются к партнёрству и финансовой поддержке музыкальных проектов:</p>
+        <ul class="partners-dove-ul mt-16px">
+          <li>Продюсеры, фестивали, некоммерческие организации</li>
+          <li>Крупные и небольшие бизнесы, меценаты и любители музыки</li>
+        </ul>
+        <p class="text-16 fw-medium mt-16px">Все предложения сотрудничества рассматриваются индивидуально.</p>
+        <a class="btn btn-outline d-flex d-sm-inline-flex mt-32px" href="#">ПРЕДЛОЖИТЬ ПРОЕКТ</a>
+      </div>
+      <section class="col-12 col-lg-6 partners-bg-s1 rounded-16px px-16px py-24px px-md-48px py-md-32px" aria-labelledby="funds-title">
+        <h2 id="funds-title">На что идут средства партнёров</h2>
+        <p class="text-16 mt-32px">Все взносы направляются на развитие и продвижение творческих проектов Keren
+          Aliza Project, включая:</p>
+        <ul class="mt-16px partners-std-ul">
+          <li>Запись и выпуск новых аудиоальбомов,</li>
+          <li>Создание и публикацию скрипичных и ансамблевых нот и методических материалов для педагогов,</li>
+          <li>Проведение благотворительных концертов и культурных мероприятий,</li>
+          <li>Производство иллюстрированных изданий и обучающих наборов для детей,</li>
+          <li>Поддержку сайта и международных онлайн-программ.</li>
+        </ul>
+        <p class="text-16 mt-16px"><em>Каждое ваше пожертвование помогает ещё ярче звучать скрипке Ализы
+				Керен и дарит миру больше света, тепла и радости.</em></p>
+      </section>
+    </section>
+
+    <section class="partners-tiers container mt-40px mt-md-80px" aria-labelledby="tiers-title">
+      <h2 class="partners-tiers__title" id="tiers-title">Виды партнёрства и поддержки</h2>
+      <ul class="partners-tiers__items">
+        <li class="partners-tiers__item">
+          <article class="partners-tiers__card">
+            <p class="partners-tiers__price">до $50</p>
+            <h3 class="partners-tiers__card-title">Благодарность</h3>
+            <p class="partners-tiers__des">Именная благодарность на официальном бланке</p>
+            <a class="partners-tiers__link" href="#" aria-label="Стать партнёром — Благодарность">Стать партнёром</a>
+          </article>
+        </li>
+        <li class="partners-tiers__item">
+          <article class="partners-tiers__card">
+            <p class="partners-tiers__price">$50</p>
+            <h3 class="partners-tiers__card-title">Любитель музыки для души</h3>
+            <p class="partners-tiers__des">CD My Dream + именная благодарность</p>
+            <a class="partners-tiers__link" href="#" aria-label="Стать партнёром — Любитель музыки для души">Стать партнёром</a>
+          </article>
+        </li>
+        <li class="partners-tiers__item">
+          <article class="partners-tiers__card">
+            <p class="partners-tiers__price">$100</p>
+            <h3 class="partners-tiers__card-title">Фанат музыки для души</h3>
+            <p class="partners-tiers__des">Полная дискография Ализы Керен + именная благодарность</p>
+            <a class="partners-tiers__link" href="#" aria-label="Стать партнёром — Фанат музыки для души">Стать партнёром</a>
+          </article>
+        </li>
+        <li class="partners-tiers__item">
+          <article class="partners-tiers__card">
+            <p class="partners-tiers__price">до $100/мес</p>
+            <h3 class="partners-tiers__card-title">Рекламный партнёр</h3>
+            <p class="partners-tiers__des">Реклама на второстепенной странице + сертификат</p>
+            <a class="partners-tiers__link" href="#" aria-label="Стать партнёром — Рекламный партнёр">Стать партнёром</a>
+          </article>
+        </li>
+        <li class="partners-tiers__item">
+          <article class="partners-tiers__card">
+            <p class="partners-tiers__price">от $100/мес</p>
+            <h3 class="partners-tiers__card-title">Почётный партнёр</h3>
+            <p class="partners-tiers__des">Реклама на главной странице + сертификат почётного партнёра</p>
+            <a class="partners-tiers__link" href="#" aria-label="Стать партнёром — Почётный партнёр">Стать партнёром</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="partners-quote container mt-40px mt-md-80px">
+      <figure class="partners-quote__background">
+        <blockquote class="partners-quote__blockquote">
+          <em>Благодарю за внимание и поддержку моих музыкальных проектов!</em>
+          <span>💖</span>
+        </blockquote>
+        <figcaption class="partners-quote__cite"><cite>Ализа Керен</cite></figcaption>
+      </figure>
+    </section>
+
+    <section class="partners-logos container my-40px my-md-80px" aria-labelledby="logos-title">
+      <h2 id="logos-title">Партнёры и спонсоры творческих проектов "Keren Aliza Project"</h2>
+      <ul class="d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap g-20px mt-32px">
+        <li>
+          <img src="img/kikarHamusicaLOGO11.png" alt="Kikar Hamusica">
+        </li>
+        <li>
+          <img src="img/partners-site-logo.png" alt="Партнёрский сайт">
+        </li>
+        <li>
+          <img src="img/kikarHamusicaLOGO11.png" alt="Kikar Hamusica">
+        </li>
+        <li>
+          <img src="img/partners-site-logo.png" alt="Партнёрский сайт">
+        </li>
+        <li>
+          <img src="img/kikarHamusicaLOGO11.png" alt="Kikar Hamusica">
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__layout">
+      <div class="footer__brand">
+        <a href="#" class="footer__brand-link">
+          <img class="footer__brand-logo" src="/img/svg/logo.svg" alt="">
+        </a>
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-items">
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Ализа Керен</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Слушать онлайн</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Музыкальный магазин</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Творческие новости</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Статьи о скрипке</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Уроки и курсы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__search">
+        <form action="javascript:void();" class="footer__search-box">
+          <input type="text" name="search" class="footer__search-field" placeholder="Поиск">
+        </form>
+        <a class="footer__newsletter-link" href="#">
+          <span>Подписаться на новости</span>
+        </a>
+      </div>
+      <div class="footer__partner">
+        <a href="#" class="footer__partner-link">
+          <img class="footer__partner-logo" src="/img/svg/footer_doremi.svg" alt="">
+        </a>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__contacts-title">Пишите</div>
+        <ul class="footer__contacts-items">
+          <li class="footer__contacts-item --mail">
+            <a href="#">keren.aliza.pr@gmail.com</a>
+          </li>
+          <li class="footer__contacts-item --whatsapp">
+            <a href="#">+972 54-537-0545</a>
+          </li>
+          <li class="footer__contacts-item --address">
+            <a href="#">Mevaseret Zion (Jerusalem area), Israel</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts-socials">
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.46395 8.83172C6.41595 8.83172 5.35995 8.83172 4.87995 8.83172C4.62395 8.83172 4.54395 8.73572 4.54395 8.49572C4.54395 7.85572 4.54395 7.19972 4.54395 6.55972C4.54395 6.30372 4.63995 6.22372 4.87995 6.22372H6.46395C6.46395 6.17572 6.46395 5.24772 6.46395 4.81572C6.46395 4.17572 6.57595 3.56772 6.89595 3.00772C7.23195 2.43172 7.71195 2.04772 8.31995 1.82372C8.71995 1.67972 9.11995 1.61572 9.55195 1.61572H11.1199C11.3439 1.61572 11.4399 1.71172 11.4399 1.93572V3.75972C11.4399 3.98372 11.3439 4.07972 11.1199 4.07972C10.6879 4.07972 10.2559 4.07972 9.82395 4.09572C9.39195 4.09572 9.16795 4.30372 9.16795 4.75172C9.15195 5.23172 9.16795 5.69572 9.16795 6.19172H11.0239C11.2799 6.19172 11.3759 6.28772 11.3759 6.54372V8.47972C11.3759 8.73572 11.2959 8.81572 11.0239 8.81572C10.4479 8.81572 9.21595 8.81572 9.16795 8.81572V14.0317C9.16795 14.3037 9.08795 14.3997 8.79995 14.3997C8.12795 14.3997 7.47195 14.3997 6.79995 14.3997C6.55995 14.3997 6.46395 14.3037 6.46395 14.0637C6.46395 12.3837 6.46395 8.87972 6.46395 8.83172Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4588_23895)">
+                  <path d="M8.00279 3.89209C5.73413 3.89209 3.89746 5.73076 3.89746 7.99742C3.89746 10.2661 5.73613 12.1028 8.00279 12.1028C10.2715 12.1028 12.1081 10.2641 12.1081 7.99742C12.1081 5.72876 10.2695 3.89209 8.00279 3.89209ZM8.00279 10.6621C6.53013 10.6621 5.33813 9.46942 5.33813 7.99742C5.33813 6.52542 6.53079 5.33276 8.00279 5.33276C9.47479 5.33276 10.6675 6.52542 10.6675 7.99742C10.6681 9.46942 9.47546 10.6621 8.00279 10.6621Z" />
+                  <path d="M11.2988 0.0507461C9.82682 -0.0179206 6.18082 -0.0145873 4.70749 0.0507461C3.41282 0.111413 2.27082 0.424079 1.35015 1.34475C-0.188515 2.88341 0.00815151 4.95675 0.00815151 7.99741C0.00815151 11.1094 -0.165182 13.1347 1.35015 14.6501C2.89482 16.1941 4.99815 15.9921 8.00282 15.9921C11.0855 15.9921 12.1495 15.9941 13.2395 15.5721C14.7215 14.9967 15.8402 13.6721 15.9495 11.2927C16.0188 9.82008 16.0148 6.17475 15.9495 4.70141C15.8175 1.89275 14.3102 0.189413 11.2988 0.0507461ZM13.6288 13.6321C12.6202 14.6407 11.2208 14.5507 7.98349 14.5507C4.65015 14.5507 3.31348 14.6001 2.33815 13.6221C1.21482 12.5041 1.41815 10.7087 1.41815 7.98675C1.41815 4.30341 1.04015 1.65075 4.73682 1.46141C5.58615 1.43141 5.83615 1.42141 7.97415 1.42141L8.00415 1.44141C11.5568 1.44141 14.3442 1.06941 14.5115 4.76541C14.5495 5.60875 14.5582 5.86208 14.5582 7.99675C14.5575 11.2914 14.6202 12.6361 13.6288 13.6321Z" />
+                  <path d="M12.2706 4.68917C12.8004 4.68917 13.2299 4.25967 13.2299 3.72984C13.2299 3.20002 12.8004 2.77051 12.2706 2.77051C11.7408 2.77051 11.3113 3.20002 11.3113 3.72984C11.3113 4.25967 11.7408 4.68917 12.2706 4.68917Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4588_23895">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.3764 3.33624C14.7988 2.64968 13.7325 2.36963 11.6961 2.36963H4.30379C2.22075 2.36963 1.13636 2.66775 0.560981 3.39869C0 4.11136 0 5.16142 0 6.61474V9.38475C0 12.2003 0.6656 13.6298 4.30379 13.6298H11.6961C13.4621 13.6298 14.4407 13.3827 15.0738 12.7768C15.723 12.1555 16 11.141 16 9.38475V6.61474C16 5.08209 15.9566 4.02584 15.3764 3.33624ZM10.2721 8.38217L6.91525 10.1365C6.84021 10.1758 6.75814 10.1952 6.67618 10.1952C6.58338 10.1952 6.49079 10.1702 6.40877 10.1206C6.25435 10.027 6.16005 9.85964 6.16005 9.6791V6.1816C6.16005 6.00137 6.25409 5.83414 6.40821 5.74052C6.56237 5.64689 6.75412 5.64049 6.91406 5.72359L10.2709 7.46666C10.4417 7.55533 10.5489 7.73164 10.5492 7.924C10.5494 8.11652 10.4426 8.29309 10.2721 8.38217Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4588_23906)">
+                  <path d="M15.9958 16L15.9998 15.9993V10.1313C15.9998 7.26065 15.3818 5.04932 12.0258 5.04932C10.4125 5.04932 9.32985 5.93465 8.88785 6.77398H8.84118V5.31732H5.65918V15.9993H8.97251V10.71C8.97251 9.31732 9.23651 7.97065 10.9612 7.97065C12.6605 7.97065 12.6858 9.55998 12.6858 10.7993V16H15.9958Z" />
+                  <path d="M0.263916 5.31787H3.58125V15.9999H0.263916V5.31787Z" />
+                  <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4588_23906">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer__legal">
+        <span>Aliza Keren © 2005-2025 Использование материалов только с письменного разрешения автора и с ссылкой на
+                сайт СКРИПКА*ТВОРЧЕСТВО*ИМПРОВИЗАЦИЯ</span>
+      </div>
+      <div class="footer__privacy">
+        <a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20260304234804"></script>
+
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js?_v=20260304234804"></script>
+
+  <!-- Main script -->
+  <script src="js/index.min.js?_v=20260304234804"></script>
+
+</body>
+
+</html>

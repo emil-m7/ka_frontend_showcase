@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гайд компонентов — KA Project</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap&_v=20260304234804" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20260304234804">
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css?_v=20260304234804">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css?_v=20260304234804">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__top">
+      <div class="header__top-bg"></div>
+      <div class="header__top-content">
+        <div class="header__top-content-left">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link" aria-label="Keren Aliza Project - на главную">
+              <img src="/img/svg/logo.svg" alt="Логотип Keren Aliza Project">
+            </a>
+          </div>
+        </div>
+        <div class="header__top-content-right">
+          <ul class="header__actions">
+            <li class="header__actions-item">
+              <button class="header__actions-btn --search" aria-label="Поиск по сайту">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li class="header__actions-item">
+              <a href="https://wa.me/79276666666" class="header__actions-btn --whatsapp" aria-label="Написать в WhatsApp">
+                <span class="visually-hidden">WhatsApp</span>
+              </a>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --user"></button>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-btn --login"></a>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --cart" aria-label="Корзина, товаров: 0">
+                <span class="header__actions-badge" aria-live="polite">0</span>
+              </button>
+            </li>
+
+            <li class="header__actions-item">
+              <button class="header__actions-btn --lang">Ru</button>
+              <ul class="header__lang-menu">
+                <li><a href="#">Ru</a></li>
+                <li><a href="#">En</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__nav">
+      <nav class="header__nav-content">
+        <div class="header__app-nav" aria-label="Основная навигация">
+          <a class="header__app-nav-item --shop" href="/shop">
+            <img src="/img/svg/header_store.svg" alt="">
+            <span>Магазин</span>
+          </a>
+          <button class="header__app-nav-item --menu" type="button">
+            <span>Меню</span>
+            <span class="header__app-nav-burger">
+                        <span></span>
+            </span>
+          </button>
+        </div>
+
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Ализа Керен</a>
+          </li>
+          <li class="header__nav-item --has-submenu">
+            <a href="#" class="header__nav-link">Музыкальный магазин</a>
+          </li>
+          <li class="header__nav-item --has-submenu">
+            <a href="#" class="header__nav-link">Слушать скрипку</a>
+            <div class="header__nav-submenu">
+              <div class="header__nav-submenu-group">
+                <h3 class="header__nav-submenu-title">Авторская музыка</h3>
+                <ul class="header__nav-submenu-list">
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Танцевальная</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Медленная</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Еврейская</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Песни</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__nav-submenu-group">
+                <h3 class="header__nav-submenu-title">Аранжировки и транскрипции</h3>
+                <ul class="header__nav-submenu-list">
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Золотые хиты</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Оперетта</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Еврейская музыка</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Ансамбли с певцами</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Статьи о скрипке</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Уроки и курсы</a>
+          </li>
+          <li class="header__nav-item --do-re-mi">
+            <a href="#" class="header__nav-link">
+              <span>Методика До-Ре-Ми</span>
+              <img src="/img/svg/header_doremi.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <style>
+    /* Guide-only layout styles */
+    .guide-layout {
+      display: flex;
+      gap: 40px;
+      padding: 40px 0 80px;
+    }
+
+    .guide-nav {
+      flex-shrink: 0;
+      width: 220px;
+      position: sticky;
+      top: 24px;
+      align-self: flex-start;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+
+    .guide-nav__title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6c757d;
+      margin-bottom: 12px;
+    }
+
+    .guide-nav__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .guide-nav__link {
+      display: block;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #171717;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .guide-nav__link:hover,
+    .guide-nav__link.--active {
+      background: #F9FAFF;
+      color: #EE077D;
+    }
+
+    .guide-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .guide-section {
+      padding-top: 60px;
+      margin-top: -20px;
+    }
+
+    .guide-section+.guide-section {
+      border-top: 1px solid #f2f2f2;
+    }
+
+    .guide-section__title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      margin: 0 0 24px;
+      color: #171717;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #EE077D;
+      display: inline-block;
+    }
+
+    .guide-demo {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 12px;
+    }
+
+    .guide-demo+.guide-demo {
+      margin-top: 16px;
+    }
+
+    .guide-demo__label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6c757d;
+      margin-bottom: 16px;
+    }
+
+    .guide-code {
+      background: #1a1a2e;
+      color: #a8dadc;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 12px;
+      font-family: "Courier New", monospace;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre;
+      margin-bottom: 24px;
+    }
+
+    .guide-color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 16px;
+    }
+
+    .guide-color-swatch {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+
+    .guide-color-swatch__box {
+      height: 72px;
+    }
+
+    .guide-color-swatch__info {
+      padding: 10px 12px;
+      background: #fff;
+    }
+
+    .guide-color-swatch__name {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .guide-color-swatch__hex {
+      font-size: 11px;
+      color: #6c757d;
+      font-family: "Courier New", monospace;
+    }
+
+    .guide-type-row {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    .guide-type-row__label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6c757d;
+      min-width: 120px;
+      flex-shrink: 0;
+    }
+
+    .guide-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .guide-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .guide-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .guide-layout {
+        flex-direction: column;
+      }
+
+      .guide-nav {
+        width: 100%;
+        position: static;
+      }
+
+      .guide-form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <main class="container">
+    <div class="guide-layout">
+
+      <!-- Sidebar Nav -->
+      <aside class="guide-nav">
+        <div class="guide-nav__title">Компоненты</div>
+        <ul class="guide-nav__list">
+          <li><a class="guide-nav__link" href="#colors">Цвета</a></li>
+          <li><a class="guide-nav__link" href="#typography">Типографика</a></li>
+          <li><a class="guide-nav__link" href="#buttons">Кнопки</a></li>
+          <li><a class="guide-nav__link" href="#cards">Карточки</a></li>
+          <li><a class="guide-nav__link" href="#forms">Формы</a></li>
+          <li><a class="guide-nav__link" href="#section-header">Section Header</a></li>
+          <li><a class="guide-nav__link" href="#breadcrumb">Breadcrumb</a></li>
+          <li><a class="guide-nav__link" href="#pagination">Пагинация</a></li>
+          <li><a class="guide-nav__link" href="#blockquote">Blockquote</a></li>
+          <li><a class="guide-nav__link" href="#share">Share</a></li>
+          <li><a class="guide-nav__link" href="#video-card">Video Card</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content -->
+      <div class="guide-content">
+
+        <h1 style="margin-bottom: 8px;">Гайд компонентов</h1>
+        <p class="text-16 text-muted" style="margin-bottom: 0;">Все переиспользуемые UI-компоненты проекта</p>
+
+        <!-- ======================== COLORS ======================== -->
+        <section id="colors" class="guide-section">
+          <div class="guide-section__title">Цвета</div>
+
+          <div class="guide-color-grid">
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#EE077D;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Primary Pink</div>
+                <div class="guide-color-swatch__hex">#EE077D</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#d00670;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Pink Hover</div>
+                <div class="guide-color-swatch__hex">#d00670</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#190E83;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Dark Blue</div>
+                <div class="guide-color-swatch__hex">#190E83</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#171717;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Text Dark</div>
+                <div class="guide-color-swatch__hex">#171717</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#6c757d;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Text Muted</div>
+                <div class="guide-color-swatch__hex">#6c757d</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#F9FAFF; border-bottom: 1px solid #eee;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Background Light</div>
+                <div class="guide-color-swatch__hex">#F9FAFF</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#28a745;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Success</div>
+                <div class="guide-color-swatch__hex">#28a745</div>
+              </div>
+            </div>
+            <div class="guide-color-swatch">
+              <div class="guide-color-swatch__box" style="background:#dc3545;"></div>
+              <div class="guide-color-swatch__info">
+                <div class="guide-color-swatch__name">Error</div>
+                <div class="guide-color-swatch__hex">#dc3545</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================== TYPOGRAPHY ======================== -->
+        <section id="typography" class="guide-section">
+          <div class="guide-section__title">Типографика</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Заголовки</div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">h1 / .h1<br><span style="font-weight:400;">40px, 700</span></span>
+              <h1>Ализа Керен — скрипка</h1>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">h2 / .h2<br><span style="font-weight:400;">26px, 700</span></span>
+              <h2>Уроки скрипки онлайн</h2>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">h3 / .h3<br><span style="font-weight:400;">20px, 700</span></span>
+              <h3>Курс для начинающих</h3>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">h4 / .h4<br><span style="font-weight:400;">16px, 700</span></span>
+              <h4>Расписание занятий</h4>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Параграфы</div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-12<br><span style="font-weight:400;">12px, 400</span></span>
+              <p class="text-12">Мелкий текст для подписей и лейблов</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-12-bold<br><span style="font-weight:400;">12px, 700</span></span>
+              <p class="text-12-bold">Жирный мелкий текст</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-14<br><span style="font-weight:400;">14px, 400</span></span>
+              <p class="text-14">Текст для вторичного контента и описаний</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-14-bold<br><span style="font-weight:400;">14px, 700</span></span>
+              <p class="text-14-bold">Жирный текст 14px</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-16<br><span style="font-weight:400;">16px, 400</span></span>
+              <p class="text-16">Основной текст страницы — базовый размер</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-16-bold<br><span style="font-weight:400;">16px, 700</span></span>
+              <p class="text-16-bold">Жирный основной текст</p>
+            </div>
+            <div class="guide-type-row">
+              <span class="guide-type-row__label">.text-16-bold-italic<br><span style="font-weight:400;">16px, 700i</span></span>
+              <p class="text-16-bold-italic">Жирный курсивный текст</p>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Утилитарные классы</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px 40px;">
+              <div>
+                <p class="text-12-bold" style="color:#6c757d; margin-bottom: 8px;">Цвет</p>
+                <p class="text-16 text-muted">text-muted</p>
+                <p class="text-16 text-primary">text-primary</p>
+              </div>
+              <div>
+                <p class="text-12-bold" style="color:#6c757d; margin-bottom: 8px;">Вес</p>
+                <p class="text-16 fw-regular">fw-regular (400)</p>
+                <p class="text-16 fw-medium">fw-medium (500)</p>
+                <p class="text-16 fw-semibold">fw-semibold (600)</p>
+                <p class="text-16 fw-bold">fw-bold (700)</p>
+              </div>
+              <div>
+                <p class="text-12-bold" style="color:#6c757d; margin-bottom: 8px;">Трансформация</p>
+                <p class="text-16 text-uppercase">text-uppercase</p>
+                <p class="text-16 text-lowercase">TEXT-LOWERCASE</p>
+                <p class="text-16 text-capitalize">text-capitalize</p>
+              </div>
+              <div>
+                <p class="text-12-bold" style="color:#6c757d; margin-bottom: 8px;">Стиль</p>
+                <p class="text-16 fst-italic">fst-italic</p>
+                <p class="text-16 text-truncate" style="max-width:200px;">text-truncate — очень длинный текст который обрезается с многоточием</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================== BUTTONS ======================== -->
+        <section id="buttons" class="guide-section">
+          <div class="guide-section__title">Кнопки</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Базовые варианты — .btn + модификатор</div>
+            <div class="guide-btn-row">
+              <button class="btn btn-primary">btn-primary</button>
+              <button class="btn btn-secondary">btn-secondary</button>
+              <button class="btn btn-ghost">btn-ghost</button>
+              <button class="btn btn-outline">btn-outline</button>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Disabled</div>
+            <div class="guide-btn-row">
+              <button class="btn btn-primary" disabled>btn-primary disabled</button>
+              <button class="btn btn-secondary" disabled>btn-secondary disabled</button>
+              <button class="btn btn-outline" disabled>btn-outline disabled</button>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Специфичные кнопки проекта</div>
+            <div class="guide-btn-row" style="flex-direction: column; align-items: flex-start;">
+              <div>
+                <p class="text-12-bold text-muted" style="margin-bottom: 8px;">.btn-circles-arrow</p>
+                <a class="btn-circles-arrow" href="#">Смотреть все видео</a>
+              </div>
+              <div>
+                <p class="text-12-bold text-muted" style="margin-bottom: 8px;">.btn.btn-outline.btn-cart — кнопка с иконкой корзины</p>
+                <button class="btn btn-outline btn-cart">Купить</button>
+              </div>
+              <div>
+                <p class="text-12-bold text-muted" style="margin-bottom: 8px;">.btn.btn-tag — тег/метка</p>
+                <div class="guide-btn-row">
+                  <a class="btn btn-tag" href="#">Скрипка</a>
+                  <a class="btn btn-tag" href="#">Swing</a>
+                  <a class="btn btn-tag" href="#">AlizaKeren</a>
+                </div>
+              </div>
+              <div>
+                <p class="text-12-bold text-muted" style="margin-bottom: 8px;">.btn.btn-text — текстовая кнопка</p>
+                <button class="btn btn-text">Читать далее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-code">&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;button class="btn btn-ghost"&gt;Ghost&lt;/button&gt;
+            &lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
+            &lt;button class="btn btn-outline btn-cart"&gt;Купить&lt;/button&gt;
+            &lt;a class="btn-circles-arrow" href="#"&gt;Смотреть все&lt;/a&gt;
+            &lt;a class="btn btn-tag" href="#"&gt;Скрипка&lt;/a&gt;
+            &lt;button class="btn btn-text"&gt;Читать далее&lt;/button&gt;</div>
+        </section>
+
+        <!-- ======================== CARDS ======================== -->
+        <section id="cards" class="guide-section">
+          <div class="guide-section__title">Карточки</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.card — универсальная карточка</div>
+            <div class="guide-cards-grid">
+              <div class="card">
+                <img class="card-img" src="https://placehold.co/468x263" alt="">
+                <div class="card-body">
+                  <h3 class="card-title">Заголовок карточки</h3>
+                  <p class="card-text">Описание карточки — вторичный текст 14px</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Карточка без изображения</h3>
+                  <p class="card-text">Карточка может использоваться и без изображения — только с контентом.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.feature-card — карточка возможностей (главная)</div>
+            <div class="guide-cards-grid">
+              <div class="feature-card">
+                <h3 class="feature-card__title">Авторская музыка</h3>
+                <p class="feature-card__desc">Оригинальные произведения Ализы Керен для скрипки</p>
+              </div>
+              <div class="feature-card">
+                <h3 class="feature-card__title">Онлайн-уроки</h3>
+                <p class="feature-card__desc">Индивидуальные занятия скрипкой по Zoom и Skype</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-code">&lt;!-- .card --&gt;
+            &lt;div class="card"&gt;
+            &lt;img class="card-img" src="..." alt=""&gt;
+            &lt;div class="card-body"&gt;
+            &lt;h3 class="card-title"&gt;Заголовок&lt;/h3&gt;
+            &lt;p class="card-text"&gt;Описание&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- .feature-card --&gt;
+            &lt;div class="feature-card"&gt;
+            &lt;h3 class="feature-card__title"&gt;Заголовок&lt;/h3&gt;
+            &lt;p class="feature-card__desc"&gt;Описание&lt;/p&gt;
+            &lt;/div&gt;</div>
+        </section>
+
+        <!-- ======================== FORMS ======================== -->
+        <section id="forms" class="guide-section">
+          <div class="guide-section__title">Формы</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Поля ввода — .form-control</div>
+            <div class="guide-form-grid">
+              <div>
+                <label class="form-label">Имя</label>
+                <input class="form-control" type="text" placeholder="Введите имя">
+              </div>
+              <div>
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" placeholder="email@example.com">
+              </div>
+              <div>
+                <label class="form-label">Disabled</label>
+                <input class="form-control" type="text" value="Недоступно" disabled>
+              </div>
+              <div>
+                <label class="form-label">Readonly</label>
+                <input class="form-control" type="text" value="Только чтение" readonly>
+              </div>
+              <div>
+                <label class="form-label">Валидное поле — .is-valid</label>
+                <input class="form-control is-valid" type="text" value="Корректное значение">
+              </div>
+              <div>
+                <label class="form-label">Ошибка — .is-invalid</label>
+                <input class="form-control is-invalid" type="text" value="Некорректное значение">
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Select и Textarea</div>
+            <div class="guide-form-grid">
+              <div>
+                <label class="form-label">Выберите курс</label>
+                <select class="form-control">
+                  <option>Курс для начинающих</option>
+                  <option>Продвинутый курс</option>
+                  <option>Методика Ализы Керен</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label">Сообщение</label>
+                <textarea class="form-control" placeholder="Напишите ваш вопрос..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">Чекбоксы и Радио — .form-check</div>
+            <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <p class="text-12-bold text-muted" style="margin:0;">Checkbox</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="chk1" checked>
+                  <label class="form-check-label" for="chk1">Отмечен</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="chk2">
+                  <label class="form-check-label" for="chk2">Не отмечен</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="chk3" disabled>
+                  <label class="form-check-label" for="chk3">Disabled</label>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <p class="text-12-bold text-muted" style="margin:0;">Radio</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio" id="rad1" checked>
+                  <label class="form-check-label" for="rad1">Вариант 1</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio" id="rad2">
+                  <label class="form-check-label" for="rad2">Вариант 2</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio" id="rad3" disabled>
+                  <label class="form-check-label" for="rad3">Disabled</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-code">&lt;label class="form-label"&gt;Имя&lt;/label&gt;
+            &lt;input class="form-control" type="text" placeholder="Введите имя"&gt;
+            &lt;input class="form-control is-valid" type="text"&gt;
+            &lt;input class="form-control is-invalid" type="text"&gt;
+            &lt;select class="form-control"&gt;...&lt;/select&gt;
+            &lt;textarea class="form-control"&gt;&lt;/textarea&gt;
+
+            &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" type="checkbox" id="c1"&gt;
+            &lt;label class="form-check-label" for="c1"&gt;Текст&lt;/label&gt;
+            &lt;/div&gt;</div>
+        </section>
+
+        <!-- ======================== SECTION HEADER ======================== -->
+        <section id="section-header" class="guide-section">
+          <div class="guide-section__title">Section Header</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">По умолчанию — space-between (заголовок + кнопка)</div>
+            <header class="section-header">
+              <h2 class="section-header__title">Видеозаписи выступлений</h2>
+              <a class="btn-circles-arrow" href="#">Смотреть все</a>
+            </header>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.section-header--center</div>
+            <header class="section-header section-header--center">
+              <h2 class="section-header__title">Центрированный заголовок</h2>
+            </header>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.section-header--stack (вертикально)</div>
+            <header class="section-header section-header--stack">
+              <h2 class="section-header__title">Заголовок секции</h2>
+              <p class="section-header__subtitle text-16 text-muted">Подзаголовок или описание секции</p>
+            </header>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.section-header--stack-center (вертикально + центр)</div>
+            <header class="section-header section-header--stack-center">
+              <h2 class="section-header__title">Заголовок по центру</h2>
+              <p class="section-header__subtitle text-16 text-muted">Подзаголовок по центру</p>
+            </header>
+          </div>
+
+          <div class="guide-code">&lt;header class="section-header"&gt;
+            &lt;h2 class="section-header__title"&gt;Заголовок&lt;/h2&gt;
+            &lt;a class="btn-circles-arrow" href="#"&gt;Смотреть все&lt;/a&gt;
+            &lt;/header&gt;
+
+            &lt;!-- Модификаторы: --center | --start | --stack | --stack-center --&gt;
+            &lt;header class="section-header section-header--center"&gt;...&lt;/header&gt;
+            &lt;header class="section-header section-header--stack"&gt;
+            &lt;h2 class="section-header__title"&gt;Заголовок&lt;/h2&gt;
+            &lt;p class="section-header__subtitle"&gt;Подзаголовок&lt;/p&gt;
+            &lt;/header&gt;</div>
+        </section>
+
+        <!-- ======================== BREADCRUMB ======================== -->
+        <section id="breadcrumb" class="guide-section">
+          <div class="guide-section__title">Breadcrumb</div>
+
+          <div class="guide-demo">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+              <ol>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Слушать скрипку</a></li>
+                <li aria-current="page">Видео My Dream</li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="guide-code">&lt;nav class="breadcrumb" aria-label="breadcrumb"&gt;
+            &lt;ol&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Слушать скрипку&lt;/a&gt;&lt;/li&gt;
+            &lt;li aria-current="page"&gt;Видео My Dream&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;/nav&gt;</div>
+        </section>
+
+        <!-- ======================== PAGINATION ======================== -->
+        <section id="pagination" class="guide-section">
+          <div class="guide-section__title">Пагинация</div>
+
+          <div class="guide-demo">
+            <nav class="pagination" aria-label="Пагинация">
+              <ul class="pagination__list">
+                <li class="pagination__item --first">
+                  <a class="pagination__link" href="#" aria-label="Первая страница">
+                    <span>Первая</span>
+                  </a>
+                </li>
+                <li class="pagination__item --prev">
+                  <a class="pagination__link" href="#" aria-label="Предыдущая страница">
+                    <span>Предыдущая</span>
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item --current">
+                  <a class="pagination__link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item --ellipsis" aria-hidden="true">…</li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">12</a>
+                </li>
+                <li class="pagination__item --next">
+                  <a class="pagination__link" href="#" aria-label="Следующая страница">
+                    <span>Следующая</span>
+                  </a>
+                </li>
+                <li class="pagination__item --last">
+                  <a class="pagination__link" href="#" aria-label="Последняя страница">
+                    <span>Последняя</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="guide-code">&lt;nav class="pagination" aria-label="Пагинация"&gt;
+            &lt;ul class="pagination__list"&gt;
+            &lt;li class="pagination__item --first"&gt;
+            &lt;a class="pagination__link" href="#"&gt;&lt;span&gt;Первая&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination__item --prev"&gt;
+            &lt;a class="pagination__link" href="#"&gt;&lt;span&gt;Пред.&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination__item --current"&gt;
+            &lt;a class="pagination__link" href="#" aria-current="page"&gt;2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination__item --ellipsis" aria-hidden="true"&gt;…&lt;/li&gt;
+            &lt;li class="pagination__item --next"&gt;
+            &lt;a class="pagination__link" href="#"&gt;&lt;span&gt;След.&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination__item --last"&gt;
+            &lt;a class="pagination__link" href="#"&gt;&lt;span&gt;Последняя&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/nav&gt;</div>
+        </section>
+
+        <!-- ======================== BLOCKQUOTE ======================== -->
+        <section id="blockquote" class="guide-section">
+          <div class="guide-section__title">Blockquote</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.blockquote — базовый</div>
+            <blockquote class="blockquote">
+              <p class="text-16">Музыка — это язык, который понимают все, независимо от национальности и возраста.</p>
+            </blockquote>
+          </div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.blockquote.--quoted — с кавычками</div>
+            <blockquote class="blockquote --quoted">
+              <p class="text-16">Каждый концерт — это уникальный момент, который невозможно повторить. Мы играем сердцем.</p>
+            </blockquote>
+          </div>
+
+          <div class="guide-code">&lt;blockquote class="blockquote"&gt;
+            &lt;p class="text-16"&gt;Текст цитаты...&lt;/p&gt;
+            &lt;/blockquote&gt;
+
+            &lt;!-- С кавычками --&gt;
+            &lt;blockquote class="blockquote --quoted"&gt;
+            &lt;p class="text-16"&gt;Текст цитаты...&lt;/p&gt;
+            &lt;/blockquote&gt;</div>
+        </section>
+
+        <!-- ======================== SHARE ======================== -->
+        <section id="share" class="guide-section">
+          <div class="guide-section__title">Share</div>
+
+          <div class="guide-demo">
+            <div class="share">
+              <h3 class="share__title">Поделиться</h3>
+              <ul class="share__items">
+                <li class="share__item">
+                  <a class="share__link --facebook" href="#" aria-label="Поделиться в Facebook">Facebook</a>
+                </li>
+                <li class="share__item">
+                  <a class="share__link --whatsApp" href="#" aria-label="Поделиться в WhatsApp">WhatsApp</a>
+                </li>
+                <li class="share__item">
+                  <a class="share__link --telegram" href="#" aria-label="Поделиться в Telegram">Telegram</a>
+                </li>
+                <li class="share__item">
+                  <a class="share__link --email" href="#" aria-label="Отправить по email">Email</a>
+                </li>
+                <li class="share__item">
+                  <a class="share__link --link" href="#" aria-label="Ссылка">Ссылка</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="guide-code">&lt;div class="share"&gt;
+            &lt;h3 class="share__title"&gt;Поделиться&lt;/h3&gt;
+            &lt;ul class="share__items"&gt;
+            &lt;li class="share__item"&gt;
+            &lt;a class="share__link --facebook" href="#"&gt;Facebook&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="share__item"&gt;
+            &lt;a class="share__link --whatsApp" href="#"&gt;WhatsApp&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="share__item"&gt;
+            &lt;a class="share__link --telegram" href="#"&gt;Telegram&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="share__item"&gt;
+            &lt;a class="share__link --email" href="#"&gt;Email&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="share__item"&gt;
+            &lt;a class="share__link --link" href="#"&gt;Ссылка&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/div&gt;</div>
+        </section>
+
+        <!-- ======================== VIDEO CARD ======================== -->
+        <section id="video-card" class="guide-section">
+          <div class="guide-section__title">Video Card</div>
+
+          <div class="guide-demo">
+            <div class="guide-demo__label">.video-card — карточка видео</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; max-width: 600px;">
+              <article class="video-card">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__preview">
+                    <img class="video-card__image" src="https://placehold.co/468x236" alt="">
+                    <span class="video-card__play-icon" aria-hidden="true"></span>
+                  </div>
+                  <h3 class="video-card__title">My Freilach</h3>
+                  <p class="video-card__description">Ансамбль скрипачей "Keren Aliza Violins"</p>
+                </a>
+              </article>
+              <article class="video-card">
+                <a href="#" class="video-card__link">
+                  <div class="video-card__preview">
+                    <img class="video-card__image" src="https://placehold.co/468x236" alt="">
+                    <span class="video-card__play-icon" aria-hidden="true"></span>
+                  </div>
+                  <h3 class="video-card__title">Above the Wall</h3>
+                  <p class="video-card__description">Ализа Керен — скрипка, Михаил Богомольный — фортепиано</p>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="guide-code">&lt;article class="video-card"&gt;
+            &lt;a href="#" class="video-card__link"&gt;
+            &lt;div class="video-card__preview"&gt;
+            &lt;img class="video-card__image" src="..." alt=""&gt;
+            &lt;span class="video-card__play-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h3 class="video-card__title"&gt;Название&lt;/h3&gt;
+            &lt;p class="video-card__description"&gt;Описание&lt;/p&gt;
+            &lt;/a&gt;
+            &lt;/article&gt;</div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__layout">
+      <div class="footer__brand">
+        <a href="#" class="footer__brand-link">
+          <img class="footer__brand-logo" src="/img/svg/logo.svg" alt="">
+        </a>
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-items">
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Ализа Керен</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Слушать онлайн</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Музыкальный магазин</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Творческие новости</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Статьи о скрипке</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">Уроки и курсы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__search">
+        <form action="javascript:void();" class="footer__search-box">
+          <input type="text" name="search" class="footer__search-field" placeholder="Поиск">
+        </form>
+        <a class="footer__newsletter-link" href="#">
+          <span>Подписаться на новости</span>
+        </a>
+      </div>
+      <div class="footer__partner">
+        <a href="#" class="footer__partner-link">
+          <img class="footer__partner-logo" src="/img/svg/footer_doremi.svg" alt="">
+        </a>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__contacts-title">Пишите</div>
+        <ul class="footer__contacts-items">
+          <li class="footer__contacts-item --mail">
+            <a href="#">keren.aliza.pr@gmail.com</a>
+          </li>
+          <li class="footer__contacts-item --whatsapp">
+            <a href="#">+972 54-537-0545</a>
+          </li>
+          <li class="footer__contacts-item --address">
+            <a href="#">Mevaseret Zion (Jerusalem area), Israel</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts-socials">
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.46395 8.83172C6.41595 8.83172 5.35995 8.83172 4.87995 8.83172C4.62395 8.83172 4.54395 8.73572 4.54395 8.49572C4.54395 7.85572 4.54395 7.19972 4.54395 6.55972C4.54395 6.30372 4.63995 6.22372 4.87995 6.22372H6.46395C6.46395 6.17572 6.46395 5.24772 6.46395 4.81572C6.46395 4.17572 6.57595 3.56772 6.89595 3.00772C7.23195 2.43172 7.71195 2.04772 8.31995 1.82372C8.71995 1.67972 9.11995 1.61572 9.55195 1.61572H11.1199C11.3439 1.61572 11.4399 1.71172 11.4399 1.93572V3.75972C11.4399 3.98372 11.3439 4.07972 11.1199 4.07972C10.6879 4.07972 10.2559 4.07972 9.82395 4.09572C9.39195 4.09572 9.16795 4.30372 9.16795 4.75172C9.15195 5.23172 9.16795 5.69572 9.16795 6.19172H11.0239C11.2799 6.19172 11.3759 6.28772 11.3759 6.54372V8.47972C11.3759 8.73572 11.2959 8.81572 11.0239 8.81572C10.4479 8.81572 9.21595 8.81572 9.16795 8.81572V14.0317C9.16795 14.3037 9.08795 14.3997 8.79995 14.3997C8.12795 14.3997 7.47195 14.3997 6.79995 14.3997C6.55995 14.3997 6.46395 14.3037 6.46395 14.0637C6.46395 12.3837 6.46395 8.87972 6.46395 8.83172Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4588_23895)">
+                  <path d="M8.00279 3.89209C5.73413 3.89209 3.89746 5.73076 3.89746 7.99742C3.89746 10.2661 5.73613 12.1028 8.00279 12.1028C10.2715 12.1028 12.1081 10.2641 12.1081 7.99742C12.1081 5.72876 10.2695 3.89209 8.00279 3.89209ZM8.00279 10.6621C6.53013 10.6621 5.33813 9.46942 5.33813 7.99742C5.33813 6.52542 6.53079 5.33276 8.00279 5.33276C9.47479 5.33276 10.6675 6.52542 10.6675 7.99742C10.6681 9.46942 9.47546 10.6621 8.00279 10.6621Z" />
+                  <path d="M11.2988 0.0507461C9.82682 -0.0179206 6.18082 -0.0145873 4.70749 0.0507461C3.41282 0.111413 2.27082 0.424079 1.35015 1.34475C-0.188515 2.88341 0.00815151 4.95675 0.00815151 7.99741C0.00815151 11.1094 -0.165182 13.1347 1.35015 14.6501C2.89482 16.1941 4.99815 15.9921 8.00282 15.9921C11.0855 15.9921 12.1495 15.9941 13.2395 15.5721C14.7215 14.9967 15.8402 13.6721 15.9495 11.2927C16.0188 9.82008 16.0148 6.17475 15.9495 4.70141C15.8175 1.89275 14.3102 0.189413 11.2988 0.0507461ZM13.6288 13.6321C12.6202 14.6407 11.2208 14.5507 7.98349 14.5507C4.65015 14.5507 3.31348 14.6001 2.33815 13.6221C1.21482 12.5041 1.41815 10.7087 1.41815 7.98675C1.41815 4.30341 1.04015 1.65075 4.73682 1.46141C5.58615 1.43141 5.83615 1.42141 7.97415 1.42141L8.00415 1.44141C11.5568 1.44141 14.3442 1.06941 14.5115 4.76541C14.5495 5.60875 14.5582 5.86208 14.5582 7.99675C14.5575 11.2914 14.6202 12.6361 13.6288 13.6321Z" />
+                  <path d="M12.2706 4.68917C12.8004 4.68917 13.2299 4.25967 13.2299 3.72984C13.2299 3.20002 12.8004 2.77051 12.2706 2.77051C11.7408 2.77051 11.3113 3.20002 11.3113 3.72984C11.3113 4.25967 11.7408 4.68917 12.2706 4.68917Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4588_23895">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.3764 3.33624C14.7988 2.64968 13.7325 2.36963 11.6961 2.36963H4.30379C2.22075 2.36963 1.13636 2.66775 0.560981 3.39869C0 4.11136 0 5.16142 0 6.61474V9.38475C0 12.2003 0.6656 13.6298 4.30379 13.6298H11.6961C13.4621 13.6298 14.4407 13.3827 15.0738 12.7768C15.723 12.1555 16 11.141 16 9.38475V6.61474C16 5.08209 15.9566 4.02584 15.3764 3.33624ZM10.2721 8.38217L6.91525 10.1365C6.84021 10.1758 6.75814 10.1952 6.67618 10.1952C6.58338 10.1952 6.49079 10.1702 6.40877 10.1206C6.25435 10.027 6.16005 9.85964 6.16005 9.6791V6.1816C6.16005 6.00137 6.25409 5.83414 6.40821 5.74052C6.56237 5.64689 6.75412 5.64049 6.91406 5.72359L10.2709 7.46666C10.4417 7.55533 10.5489 7.73164 10.5492 7.924C10.5494 8.11652 10.4426 8.29309 10.2721 8.38217Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contacts-social">
+            <a class="footer__contacts-social-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4588_23906)">
+                  <path d="M15.9958 16L15.9998 15.9993V10.1313C15.9998 7.26065 15.3818 5.04932 12.0258 5.04932C10.4125 5.04932 9.32985 5.93465 8.88785 6.77398H8.84118V5.31732H5.65918V15.9993H8.97251V10.71C8.97251 9.31732 9.23651 7.97065 10.9612 7.97065C12.6605 7.97065 12.6858 9.55998 12.6858 10.7993V16H15.9958Z" />
+                  <path d="M0.263916 5.31787H3.58125V15.9999H0.263916V5.31787Z" />
+                  <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4588_23906">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer__legal">
+        <span>Aliza Keren © 2005-2025 Использование материалов только с письменного разрешения автора и с ссылкой на
+                сайт СКРИПКА*ТВОРЧЕСТВО*ИМПРОВИЗАЦИЯ</span>
+      </div>
+      <div class="footer__privacy">
+        <a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20260304234804"></script>
+
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js?_v=20260304234804"></script>
+
+  <!-- Main script -->
+  <script src="js/index.min.js?_v=20260304234804"></script>
+
+</body>
+
+</html>
