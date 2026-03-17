@@ -8,16 +8,16 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap&_v=20260304234804" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap&_v=20260317194410" rel="stylesheet">
 
   <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20260304234804">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20260317194410">
 
   <!-- Fancybox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css?_v=20260304234804">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css?_v=20260317194410">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.min.css?_v=20260304234804">
+  <link rel="stylesheet" href="css/styles.min.css?_v=20260317194410">
 
 </head>
 
@@ -152,16 +152,12 @@
   </div>
 
   <main>
-    <div class="container row g-20px pt-40px pb-80px">
-      <div class="col-12 col-lg-9">
+    <div class="container row gy-40px gx-0 g-md-20px pt-40px pb-80px">
+      <div class="col-12 col-lg-9 pe-0 pe-xl-28px">
 
-        <!-- слайдер банеров -->
         <section class="banner-swiper">
           <div class="swiper banner-swiper__slider">
             <div class="swiper-wrapper">
-
-
-
               <div class="swiper-slide banner-swiper__slide">
                 <div class="mp-banner-1">
                   <div class="mp-banner-1__content">
@@ -180,8 +176,8 @@
                     <p class="mp-banner-1__call-to-action">
                       <a class="mp-banner-1__btn" href="#">
                         <span>
-                                            СЛУШАТЬ
-                                            <span>МУЗЫКУ ДЛЯ ДУШИ</span>
+                                    СЛУШАТЬ
+                                    <span class="d-none d-sm-inline">МУЗЫКУ ДЛЯ ДУШИ</span>
                         </span>
                       </a>
                     </p>
@@ -189,6 +185,7 @@
                   </div>
                 </div>
               </div>
+
 
               <div class="swiper-slide banner-swiper__slide">
                 <div class="mp-banner-2">
@@ -214,6 +211,7 @@
                   </div>
                 </div>
               </div>
+
 
               <div class="swiper-slide banner-swiper__slide">
                 <div class="mp-banner-3">
@@ -251,8 +249,43 @@
           </div>
         </section>
 
-        <!-- цитата Алисы Керен -->
-        <section class="pt-80px">
+        <section class="sidebar-menu sidebar-menu--static pt-40px d-block d-md-none">
+          <div class="sidebar-menu__body px-20px py-24px">
+            <div class="sidebar-menu__content">
+              <div class="sidebar-newslist">
+                <h3 class="sidebar-newslist__title">Новости</h3>
+                <div class="swiper mp-mobile-news pt-16px">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a class="sidebar-newslist__link" href="#">
+                        <time class="sidebar-newslist__date">5 мая 2022.</time>
+                        <span class="sidebar-newslist__text">Онлайн-семинар «Здоровье рук музыкантов» -
+                                    педагогам, студентам, оркестрантам.</span>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a class="sidebar-newslist__link" href="#">
+                        <time class="sidebar-newslist__date">10 мая 2022.</time>
+                        <span class="sidebar-newslist__text">Онлайн-концерт «Скрипка, играющая оперетту».
+                                    Слушать</span>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a class="sidebar-newslist__link" href="#">
+                        <time class="sidebar-newslist__date">22 мая 2022.</time>
+                        <span class="sidebar-newslist__text">Онлайн-семинар для родителей «Как научить
+                                    ребенка петь»</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="mp-mobile-news-pagination custom-pagination"></div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Ализа Керен</h2>
             <a class="btn btn-circles-arrow" href="#">Об авторе</a>
@@ -264,8 +297,7 @@
           </blockquote>
         </section>
 
-        <!-- видео с её концертов -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Музыка для скрипки – музыка для души</h2>
             <a class="btn btn-circles-arrow" href="#">Слушать</a>
@@ -273,27 +305,25 @@
               Ализы Керен</p>
           </header>
           <div class="row g-20px pt-32px">
-            <div class="col-6">
+            <div class="col-12 col-sm-6">
               <article class="video-card">
                 <a href="#" class="video-card__link">
                   <div class="video-card__preview">
                     <img class="video-card__image" src="https://placehold.co/468x236" alt="" />
                     <span class="video-card__play-icon" aria-hidden="true"></span>
                   </div>
-
                   <h3 class="video-card__title">Music for the Soul by Aliza Keren</h3>
                   <p class="video-card__description">Дуэт скрипки и фортепиано</p>
                 </a>
               </article>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-6">
               <article class="video-card">
                 <a href="#" class="video-card__link">
                   <div class="video-card__preview">
                     <img class="video-card__image" src="https://placehold.co/468x236" alt="" />
                     <span class="video-card__play-icon" aria-hidden="true"></span>
                   </div>
-
                   <h3 class="video-card__title">Music for the Soul by Aliza Keren</h3>
                   <p class="video-card__description">Ансамбль скрипачей “Keren Aliza Violins”</p>
                 </a>
@@ -302,51 +332,51 @@
           </div>
         </section>
 
-        <!-- аудио альбомы -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Аудиоальбомы</h2>
-            <a class="btn btn-circles-arrow" href="#">КУПИТЬ</a>
+            <a class="btn btn-circles-arrow" href="#">Купить</a>
             <p class="section-header__subtitle">Аудиозаписи оригинальной музыки Ализы Керен и золотые хиты легкой
               музыки</p>
           </header>
-          <div class="row g-20px pt-32px">
-            <div class="col-6">
-              <article class="audioalbum-card">
-                <a href="#" class="audioalbum-card__link">
-                  <div class="audioalbum-card__preview">
-                    <img class="audioalbum-card__image" src="https://placehold.co/468x236" alt="" />
-                  </div>
 
-                  <h3 class="audioalbum-card__title">Music for the Soul by Aliza Keren</h3>
-                </a>
-              </article>
+          <div class="swiper pt-32px mc-audioalbumes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="audioalbum-card">
+                  <a href="#" class="audioalbum-card__link">
+                    <div class="audioalbum-card__preview">
+                      <img class="audioalbum-card__image" src="https://placehold.co/468x236" alt="" />
+                    </div>
+                    <h3 class="audioalbum-card__title">Music for the Soul by Aliza Keren</h3>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="audioalbum-card">
+                  <a href="#" class="audioalbum-card__link">
+                    <div class="audioalbum-card__preview">
+                      <img class="audioalbum-card__image" src="https://placehold.co/468x236" alt="" />
+                    </div>
+                    <h3 class="audioalbum-card__title">Music for the Soul by Aliza Keren</h3>
+                  </a>
+                </article>
+              </div>
             </div>
-            <div class="col-6">
-              <article class="audioalbum-card">
-                <a href="#" class="audioalbum-card__link">
-                  <div class="audioalbum-card__preview">
-                    <img class="audioalbum-card__image" src="https://placehold.co/468x236" alt="" />
-                  </div>
-
-                  <h3 class="audioalbum-card__title">Music for the Soul by Aliza Keren</h3>
-                </a>
-              </article>
-            </div>
+            <div class="mp-audioalbumes-pagination custom-pagination"></div>
           </div>
         </section>
 
-        <!-- музыкальный магазин -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Музыкальный магазин</h2>
             <a class="btn btn-circles-arrow" href="#">Посетить</a>
             <p class="section-header__subtitle">Ноты для скрипки, фортепиано, синтезатора, минусовки, аудиоальбомы
             </p>
           </header>
-          <div class="mp-products pt-32px">
-            <div class="mp-products__list">
-              <div class="mp-products__item">
+          <div class="mp-products pt-32px swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <article class="product-card">
                   <a href="#" class="product-card__link" aria-label="Название товара на две строчки">
                     <div class="product-card__img-wrp">
@@ -363,7 +393,7 @@
                   </div>
                 </article>
               </div>
-              <div class="mp-products__item">
+              <div class="swiper-slide">
                 <article class="product-card">
                   <a href="#" class="product-card__link" aria-label="Название товара на две строчки">
                     <div class="product-card__img-wrp">
@@ -380,7 +410,7 @@
                   </div>
                 </article>
               </div>
-              <div class="mp-products__item">
+              <div class="swiper-slide">
                 <article class="product-card">
                   <a href="#" class="product-card__link" aria-label="Название товара на две строчки">
                     <div class="product-card__img-wrp">
@@ -397,7 +427,7 @@
                   </div>
                 </article>
               </div>
-              <div class="mp-products__item">
+              <div class="swiper-slide">
                 <article class="product-card">
                   <a class="product-card__link" href="#" aria-label="Название товара на две строчки">
                     <div class="product-card__img-wrp">
@@ -415,19 +445,19 @@
                 </article>
               </div>
             </div>
+
+            <div class="mp-products-pagination custom-pagination"></div>
           </div>
         </section>
 
-        <!-- таблица - график концертов -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Концерты</h2>
             <a class="btn btn-circles-arrow" href="#">Заказать выступление</a>
-            <p class="section-header__subtitle">Ноты для скрипки, фортепиано, синтезатора, минусовки, аудиоальбомы
-            </p>
+            <p class="section-header__subtitle">Ноты для скрипки, фортепиано, синтезатора, минусовки, аудиоальбомы</p>
           </header>
 
-          <div class="schedule-table pt-32px">
+          <div class="schedule-table pt-16px pt-md-32px">
             <table>
               <thead>
                 <tr>
@@ -443,8 +473,15 @@
                 <tr>
                   <td class="schedule-table__date">Каждый четверг 18.30-20.30</td>
                   <td class="schedule-table__place">Иерусалим Площадь Музыки</td>
-                  <td class="schedule-table__program">Оригинальная музыка Ализы Керен, золотые хиты мировой
-                    легкой музыки, еврейская музыка</td>
+                  <td class="schedule-table__program">
+                    <p>
+                      Оригинальная музыка Ализы Керен, золотые хиты мировой
+                      легкой музыки, еврейская музыка
+                    </p>
+                    <p class="pt-2 d-block d-md-none">
+                      <a class="btn schedule-table-arrow-down" href="#">Подробнее</a>
+                    </p>
+                  </td>
                   <td class="schedule-table__performers">
                     <div><b>Ализа Керен</b> (скрипка)</div>
                     <div><b>Вадим Юшин</b> (фортепиано)</div>
@@ -458,8 +495,15 @@
                 <tr>
                   <td class="schedule-table__date">Каждый четверг 18.30-20.30</td>
                   <td class="schedule-table__place">Иерусалим Площадь Музыки</td>
-                  <td class="schedule-table__program">Оригинальная музыка Ализы Керен, золотые хиты мировой
-                    легкой музыки, еврейская музыка</td>
+                  <td class="schedule-table__program">
+                    <p>
+                      Оригинальная музыка Ализы Керен, золотые хиты мировой
+                      легкой музыки, еврейская музыка
+                    </p>
+                    <p class="pt-2 d-block d-md-none">
+                      <a class="btn schedule-table-arrow-down" href="#">Подробнее</a>
+                    </p>
+                  </td>
                   <td class="schedule-table__performers">
                     <div><b>Ализа Керен</b> (скрипка)</div>
                     <div><b>Вадим Юшин</b> (фортепиано)</div>
@@ -475,8 +519,7 @@
           </div>
         </section>
 
-        <!-- свайпер отзывов -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Отзывы</h2>
           </header>
@@ -542,22 +585,22 @@
                 </div>
 
               </div>
+              <div class="mp-testimonials__pagination custom-pagination"></div>
             </div>
             <button class="mp-testimonials__nav --prev swiper-button-prev" type="button"></button>
             <button class="mp-testimonials__nav --next swiper-button-next" type="button"></button>
           </div>
         </section>
 
-        <!-- статьи о скрипке -->
-        <section class="pt-80px">
+        <section class="pt-40px pt-md-80px">
           <header class="section-header">
             <h2 class="section-header__title h2">Статьи о скрипке</h2>
             <a class="btn btn-circles-arrow" href="#">Все статьи</a>
           </header>
 
-          <div class="mp-articles pt-32px">
-            <ul class="mp-articles__list">
-              <li class="mp-articles__item">
+          <div class="mp-articles swiper pt-32px">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
                 <article class="mp-article-card">
                   <h3 class="mp-article-card__title">
                     <a class="mp-article-card__title-link" href="#">
@@ -576,7 +619,7 @@
                   </p>
                 </article>
               </li>
-              <li class="mp-articles__item">
+              <li class="swiper-slide">
                 <article class="mp-article-card">
                   <h3 class="mp-article-card__title">
                     <a class="mp-article-card__title-link" href="#">
@@ -595,7 +638,7 @@
                   </p>
                 </article>
               </li>
-              <li class="mp-articles__item">
+              <li class="swiper-slide">
                 <article class="mp-article-card">
                   <h3 class="mp-article-card__title">
                     <a class="mp-article-card__title-link" href="#">
@@ -615,16 +658,15 @@
                 </article>
               </li>
             </ul>
+
+            <div class="mp-articles-pagination custom-pagination"></div>
           </div>
-
-
         </section>
-
       </div>
       <div class="col-12 col-lg-3">
         <aside class="sidebar-menu sidebar-menu--static">
           <div class="sidebar-menu__body px-16px py-32px">
-            <div class="sidebar-menu__content">
+            <div class="sidebar-menu__content d-none d-md-block">
               <div class="sidebar-newslist">
                 <h3 class="sidebar-newslist__title">Новости</h3>
                 <ul class="sidebar-newslist__items">
@@ -650,7 +692,7 @@
               </div>
             </div>
 
-            <div class="sidebar-menu__content">
+            <div class="sidebar-menu__content pt-0 p-md-31px">
               <form class="sidebar-subscribe">
                 <h3 class="sidebar-subscribe__title">Подписка на новости</h3>
                 <label class="sidebar-subscribe__label" for="name">
@@ -806,13 +848,13 @@
     </div>
   </footer>
   <!-- Swiper -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20260304234804"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20260317194410"></script>
 
   <!-- Fancybox -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js?_v=20260304234804"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js?_v=20260317194410"></script>
 
   <!-- Main script -->
-  <script src="js/index.min.js?_v=20260304234804"></script>
+  <script src="js/index.min.js?_v=20260317194410"></script>
 
 </body>
 
